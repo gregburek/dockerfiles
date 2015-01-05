@@ -35,11 +35,6 @@ RUN { \
 	echo 'uscan --force-download --verbose --download-current-version'; \
 } >> ~/.bash_history
 
-# for ssh to debian hosts, let's make sure we know their fingerprints <3
-RUN mkdir -p ~/.ssh && chmod 700 ~/.ssh \
-	&& wget -O ~/.ssh/known_hosts https://db.debian.org/debian_known_hosts \
-	&& chmod 644 ~/.ssh/known_hosts
-
 # make sure things are pretty
 ENV LANG C.UTF-8
 ENV TERM xterm-256color
