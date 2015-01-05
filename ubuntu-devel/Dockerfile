@@ -1,4 +1,4 @@
-FROM ubuntu-debootstrap:trusty
+FROM ubuntu-debootstrap:utopic
 # based on https://github.com/tianon/dockerfiles/blob/master/debian/ubuntu-devel/Dockerfile
 
 # normal build deps
